@@ -1,3 +1,9 @@
+### the function helps us to calaculate inverse matrix or retrive the inverse matrix
+
+
+
+### create the matrix
+
 makeCacheMatrix <- function(x = matrix(0)) {
   m <- NULL
   set <- function(y) {
@@ -12,7 +18,11 @@ makeCacheMatrix <- function(x = matrix(0)) {
        getmatrix = getmatrix)
 }
 
+## calculate tje inverse matrix 
+
 cacheSolve <- function(x, ...) {
+
+  ##  Return a matrix that is the inverse of 'x'
   m <- x$getmatrix()
   if(!is.null(m)) {
     message("getting cached data")
